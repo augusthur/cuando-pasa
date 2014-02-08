@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+    <title>Cuando pasa</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="application-name" content="Cuando Pasa">
+    <meta name="msapplication-TileColor" content="#e9efef">
+    <meta name="msapplication-TileImage" content="assets/msfavicon.png ">
+    <link rel="icon" type="image/x-icon" sizes="16x16" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/icon32.png">
+    <link rel="icon" type="image/png" sizes="64x64" href="assets/icon64.png">
+    <link rel="icon" type="image/svg" sizes="any" href="assets/icon.svg">
+    <link rel="stylesheet" href="estilo.css">
+    <script src="global.js" type="text/javascript" charset="utf-8"></script>
+    <script src="acciones.js" type="text/javascript" charset="utf-8"></script>
+    <script src="sincro.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+    <header id="encabezado">
+        <span id="sp_botonesConsulta" class="botonesParada" >
+            <input type="button" id="bt_consultar" class="botonIzq" value="Consultar"><input type="button" id="bt_agregar" class="botonDer" value="Agregar">
+        </span>
+        <span id="sp_nombreConsulta">
+            <label id="lb_consulta">Consultar parada:</label>
+        </span>
+        <span id="sp_datosConsulta">
+            <select id="sl_linea">
+                <option value="" disabled selected>Linea</option>
+                <option value="Todas">Todas</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="9C">9C</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="18">18</option>
+            </select>
+            <input type="tel" id="in_parada" placeholder="Parada" maxlength="5">
+        </span>
+    </header>
+    <ul id="marcadores">
+    </ul>
+    <footer id="fin">
+        <span id="sp_botonesPerfil">
+            <input type="button" id="bt_importar" class="botonIzq" value="Importar"><input type="button" id="bt_exportar" class="botonDer" value="Exportar">
+        </span>
+        <span id="sp_footer">
+            <a href="https://twitter.com/augusthur" target="_blank">@augusthur</a> -
+            <a href="http://www.heliohost.org/" target="_blank">Hosting</a> -
+            <a href="https://github.com/augusthur/cuando-pasa" target="_blank">Github</a> -
+            <a href="http://cuandopasa.efibus.com.ar/" target="_blank">Fuente</a>
+        </span>
+    </footer>
+</body>
+</html>

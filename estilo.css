@@ -1,0 +1,201 @@
+body {
+    background-color: #414141;
+    margin: 0;
+    font-family: sans-serif;
+    color: rgb(68, 68, 68);
+    font-weight: lighter;
+}
+
+a:link,
+a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover,
+a:active {
+    color: #56c2e1;
+    text-decoration: none;
+}
+
+input,
+select {
+    background: white;
+    color: #333;
+    border: 1px solid #A4A4A4;
+    border-radius: 0px;
+    font-family: sans-serif;
+    font-weight: lighter;
+    transition: all 0.5s ease;
+}
+
+input:hover,
+select:hover {
+    border: 1px solid #3f9db8;
+    box-shadow: inset 0px 1px 2px rgba(0,0,0,0.3);
+}
+
+input:focus,
+select:focus {
+    border: 1px solid #56c2e1;
+    outline: none;
+    box-shadow: inset 0px 1px 2px rgba(0,0,0,0.3);
+    background: rgb(255, 255, 255);
+}
+
+input[type="button"] {
+    color: #fff;
+    background: #56c2e1;
+    box-shadow: inset 0 0 2px rgba(256,256,256,0.75);
+    margin: 0;
+    border: 1px solid #46b3d3;
+    cursor: pointer;
+    font-size: 9pt;
+    font-family: sans-serif;
+    font-weight: normal;
+    text-shadow: 0px 1px 0 rgba(0,0,0,0.25);
+}
+
+input[type="button"]:hover {
+    background: #3f9db8;
+    border: 1px solid rgba(256,256,256,0.75);
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.5);
+}
+
+input[type="button"]:active {
+    background: #56c2e1;
+    box-shadow: inset 0 1px 6px rgba(256,256,256,0.75);
+}
+
+span.nombreMarcador {
+    display: block;
+    font-size: 13pt;
+    line-height: 100%;
+}
+
+span.infoMarcador {
+    display: block;
+    clear: left;
+    font-size: 11pt;
+}
+
+span.botonesParada {
+    clear: both;
+    float: right;
+}
+
+span.botonesParada input[type="button"] {
+    padding: 8px 0;
+    width: 68px;
+}
+
+input.botonIzq {
+    border-radius: 4px 0 0 4px;
+}
+
+input.botonDer {
+    border-radius: 0 4px 4px 0;
+}
+
+header#encabezado {
+    display: block;
+    background-color: #D4DEDF;
+    padding: 1px;
+}
+
+ul#marcadores {
+    padding: 0;
+    margin: 0;
+}
+
+ul#marcadores li {
+    display: block;
+    list-style: none;
+    padding: 8px;
+}
+
+ul#marcadores li:nth-child(odd) {
+    background-color: #F3F3F3;
+}
+
+ul#marcadores li:nth-child(even) {
+    background-color: #e2e9e9;
+}
+
+footer#fin {
+    color: white;
+    text-align: center;
+    display: block;
+}
+
+footer#fin input[type="button"] {
+    padding: 8px;
+    width: 50%;
+    max-width: 320px;
+}
+
+span#sp_botonesConsulta {
+    margin-top: 11px;
+    margin-right: 7px;
+}
+
+span#sp_nombreConsulta {
+    display: block;
+    margin-bottom: 1px;
+    height: 29px;
+}
+
+span#sp_datosConsulta {
+    display: block;
+    font-size: 11pt;
+}
+
+span#sp_botonesPerfil {
+    padding: 4px;
+    display: block;
+}
+
+span#sp_footer {
+    display: block;
+    font-size: 11pt;
+}
+
+input#in_nombre {
+    padding: 2px;
+    width: 146px;
+    width: calc(100% - 154px);
+    height: 23px;
+    font-size: 10pt;
+    vertical-align: top;
+}
+
+select#sl_linea {
+    padding: 4px;
+    width: 74px;
+    height: 29px;
+    font-size: 12pt;
+}
+
+input#in_parada {
+    padding: 3px 0 1px 8px;
+    width: 64px;
+    height: 23px;
+    font-size: 12pt;
+    vertical-align: top;
+}
+
+label#lb_consulta {
+    font-size: 14pt;
+    line-height: 150%;
+}
+
+div#overlay {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    z-index: 100;
+    opacity: 0.7;
+    width: 100%;
+    height: 100%;
+    background-color: #414141;
+}

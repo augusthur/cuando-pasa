@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.1"
+   width="64"
+   height="64"
+   viewBox="0 0 64 64"
+   id="svg2">
+  <title
+     id="title4">114 - Retina iPhone App Icon</title>
+  <metadata
+     id="metadata15">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>114 - Retina iPhone App Icon</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <description
+     id="description6">Created with Sketch (http://www.bohemiancoding.com/sketch)</description>
+  <defs
+     id="defs8" />
+  <path
+     d="m 16,9 c -2.77,0 -5,2.23 -5,5 l 0,4 -2,0 c -1.108,0 -2,0.892 -2,2 l 0,8 c 0,1.108 0.892,1.999999 2,2 l 2,0 0,16 c 0,1.642544 0.784141,3.089576 2,4 l 0,3 c 0,1.662 1.338,3 3,3 l 5,0 c 1.662,0 3,-1.338 3,-3 l 0,-2 16,0 0,2 c 0,1.662 1.338,3 3,3 l 5,0 c 1.662,0 3,-1.338 3,-3 l 0,-3 c 1.215859,-0.910424 2,-2.357456 2,-4 l 0,-16 2,0 c 1.108,-1e-6 2,-0.892 2,-2 l 0,-8 c 0,-1.108 -0.892,-2 -2,-2 l -2,0 0,-4 C 53,11.23 50.77,9 48,9 L 16,9 z m 1,3 30,0 c 1.662,0 3,1.338 3,3 l 0,30 c 0,1.662 -1.338,3 -3,3 l -30,0 c -1.662,0 -3,-1.338 -3,-3 l 0,-30 c 0,-1.662 1.338,-3 3,-3 z"
+     id="rect3785"
+     style="fill:#56c2e1;stroke:none" />
+  <path
+     d="M 20.0625,15 C 18.366894,15 17,16.366894 17,18.0625 l 0,12.875 C 17,32.633106 18.366894,34 20.0625,34 l 23.875,0 C 45.633106,34 47,32.633106 47,30.9375 l 0,-12.875 C 47,16.366894 45.633106,15 43.9375,15 l -23.875,0 z M 21,18 43,18 c 0.554,0 1,0.446 1,1 l 0,11 c 0,0.554 -0.446,1 -1,1 l -22,0 c -0.554,0 -1,-0.446 -1,-1 l 0,-11 c 0,-0.554 0.446,-1 1,-1 z"
+     id="rect3834"
+     style="fill:#56c2e1;stroke:none" />
+  <path
+     d="m 21,37 c -2.209139,0 -4,1.790861 -4,4 0,2.209139 1.790861,4 4,4 2.209139,0 4,-1.790861 4,-4 0,-2.209139 -1.790861,-4 -4,-4 z m 0,3 c 0.552285,0 1,0.447715 1,1 0,0.552285 -0.447715,1 -1,1 -0.552285,0 -1,-0.447715 -1,-1 0,-0.552285 0.447715,-1 1,-1 z"
+     id="path3838"
+     style="fill:#56c2e1;fill-opacity:1;stroke:none" />
+  <path
+     d="m 43,37 c -2.209139,0 -4,1.790861 -4,4 0,2.209139 1.790861,4 4,4 2.209139,0 4,-1.790861 4,-4 0,-2.209139 -1.790861,-4 -4,-4 z m 0,3 c 0.552285,0 1,0.447715 1,1 0,0.552285 -0.447715,1 -1,1 -0.552285,0 -1,-0.447715 -1,-1 0,-0.552285 0.447715,-1 1,-1 z"
+     id="path3842"
+     style="fill:#56c2e1;fill-opacity:1;stroke:none" />
+</svg>
