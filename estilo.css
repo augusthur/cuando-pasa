@@ -56,6 +56,12 @@ input[type="button"] {
     text-shadow: 0px 1px 0 rgba(0,0,0,0.25);
 }
 
+input[type="text"] {
+    padding: 2px;
+    height: 23px;
+    font-size: 10pt;
+}
+
 input[type="button"]:hover {
     background: #3f9db8;
     border: 1px solid rgba(256,256,256,0.75);
@@ -131,7 +137,6 @@ footer#fin {
 footer#fin input[type="button"] {
     padding: 8px;
     width: 50%;
-    max-width: 320px;
 }
 
 span#sp_botonesConsulta {
@@ -151,8 +156,10 @@ span#sp_datosConsulta {
 }
 
 span#sp_botonesPerfil {
-    padding: 4px;
+    max-width: 640px;
     display: block;
+    padding: 4px;
+    margin: 0 auto;
 }
 
 span#sp_footer {
@@ -161,12 +168,8 @@ span#sp_footer {
 }
 
 input#in_nombre {
-    padding: 2px;
     width: 146px;
     width: calc(100% - 154px);
-    height: 23px;
-    font-size: 10pt;
-    vertical-align: top;
 }
 
 select#sl_linea {
@@ -182,6 +185,16 @@ input#in_parada {
     height: 23px;
     font-size: 12pt;
     vertical-align: top;
+}
+
+input#in_perfil {
+    display: block;
+    margin-bottom: 4px;
+    width: 100%;
+    height: 29px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 label#lb_consulta {

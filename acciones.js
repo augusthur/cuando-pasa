@@ -93,10 +93,48 @@ function borrarMarcador(event) {
     }
 }
 
+function iniciarImportar() {
+    accionPerfil(importarMarcadores, "Ingrese el nombre del perfil a descargar");
+}
+
+function iniciarExportar() {
+    accionPerfil(exportarMarcadores, "Ingrese un nombre que identifique al perfil");
+}
+
+function accionPerfil(accion, textoAyuda) {
+    var spnPerfil = document.getElementById("sp_botonesPerfil");
+    var txtPerfil = document.createElement("input");
+    txtPerfil.setAttribute("type", "text");
+    txtPerfil.setAttribute("id", "in_perfil");
+    txtPerfil.setAttribute("placeholder", textoAyuda);
+    txtPerfil.setAttribute("maxlength", "16");
+    spnPerfil.insertBefore(txtPerfil, spnPerfil.firstChild);
+    var btnAceptar = document.getElementById("bt_importar");
+    btnAceptar.setAttribute("value", "Aceptar");
+    btnAceptar.onclick = accion;
+    var btnCancelar = document.getElementById("bt_exportar");
+    btnCancelar.setAttribute("value", "Cancelar");
+    btnCancelar.onclick = cancelarPerfil;
+    txtPerfil.focus();
+}
+
+function cancelarPerfil() {
+    var spnPerfil = document.getElementById("sp_botonesPerfil");
+    var txtPerfil = document.getElementById("in_perfil");
+    spnPerfil.removeChild(txtPerfil);
+    var btnAceptar = document.getElementById("bt_importar");
+    btnAceptar.setAttribute("value", "Importar");
+    btnAceptar.onclick = iniciarImportar;
+    var btnCancelar = document.getElementById("bt_exportar");
+    btnCancelar.setAttribute("value", "Exportar");
+    btnCancelar.onclick = iniciarExportar;
+}
+
 function importarMarcadores() {
-    if ((getParadasArray().length == 0) || confirm("¿Está seguro? Se perderán los marcadores actuales.")) {
-        var perfil = prompt("Ingrese el nombre del perfil desde el cual importar:", "");
-        if (perfil!=null && perfil.length>0) {
+    var perfil = document.getElementById("in_perfil").value;
+    if (perfil && perfil.length>0) {
+        if ((getParadasArray().length == 0) || confirm("¿Está seguro? Se perderán los marcadores actuales.")) {
+            cancelarPerfil();
             var url = "coleapi/perfil/"+perfil;
             enviarSolicitud("GET", url, null, obtenerPerfil);
         }
@@ -104,8 +142,9 @@ function importarMarcadores() {
 }
 
 function exportarMarcadores() {
-    var perfil = prompt("Ingrese un nombre para el perfil de sus marcadores:", "");
+    var perfil = document.getElementById("in_perfil").value;
     if (perfil && perfil.length>0) {
+        cancelarPerfil();
         var paqueteArray = {};
         var paradasArray = getParadasArray();
         for (var i in paradasArray) {

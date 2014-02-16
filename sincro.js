@@ -6,9 +6,9 @@ function init() {
     var btnConsultar = document.getElementById("bt_consultar");
     btnConsultar.onclick = hacerConsulta;
     var btnImportar = document.getElementById("bt_importar");
-    btnImportar.onclick = importarMarcadores;
+    btnImportar.onclick = iniciarImportar;
     var btnExportar = document.getElementById("bt_exportar");
-    btnExportar.onclick = exportarMarcadores;
+    btnExportar.onclick = iniciarExportar;
 
     var paradasArray = getParadasArray();
     for (var i in paradasArray) {
@@ -33,7 +33,7 @@ function obtenerPerfil(peticion) {
             removerMarcador(paradasArray[i]);
             removeParadaFromDOM(paradasArray[i]);
         }
-        var marcadores = JSON.parse(peticion.response);
+        var marcadores = JSON.parse(peticion.responseText);
         for (var i in marcadores) {
             var key = i;
             var marcador = marcadores[i];

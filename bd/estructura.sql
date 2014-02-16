@@ -1,0 +1,34 @@
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+
+
+CREATE TABLE IF NOT EXISTS marcador (
+  id_marcador int(10) unsigned NOT NULL AUTO_INCREMENT,
+  clave varchar(24) COLLATE utf8_unicode_ci NOT NULL,
+  nombre varchar(32) COLLATE utf8_unicode_ci NOT NULL,
+  parada varchar(5) COLLATE utf8_unicode_ci NOT NULL,
+  linea varchar(5) COLLATE utf8_unicode_ci NOT NULL,
+  id_perfil int(10) unsigned NOT NULL,
+  PRIMARY KEY (id_marcador),
+  KEY id_perfil (id_perfil)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=11 ;
+
+CREATE TABLE IF NOT EXISTS perfil (
+  id_perfil int(10) unsigned NOT NULL AUTO_INCREMENT,
+  nombre varchar(16) COLLATE utf8_unicode_ci NOT NULL,
+  PRIMARY KEY (id_perfil),
+  UNIQUE KEY nombre (nombre)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=7 ;
+
+
+ALTER TABLE `marcador`
+  ADD CONSTRAINT marcador_ibfk_1 FOREIGN KEY (id_perfil) REFERENCES perfil (id_perfil) ON DELETE CASCADE ON UPDATE CASCADE;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
